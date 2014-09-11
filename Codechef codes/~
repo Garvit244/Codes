@@ -1,0 +1,161 @@
+#include<stdio.h>
+//#include "alloc.h"
+
+
+
+struct node
+{
+       int data;
+       
+       struct node *link;
+       
+};
+
+struct node *add(int ,struct node *);
+void display(struct node *);
+void insert(int,int,struct node *);
+void count(struct node *);
+main()
+{
+      int x;
+      
+      struct node *ini=NULL;
+      
+      //printf(" enter the data value \n");
+      
+      //scanf("%d",&x);
+    
+      
+      ini=add(5,ini);
+      
+      //display(ini);
+      
+      ini=add(10,ini);
+      
+      //display(ini);
+      
+      ini=add(15,ini);
+      
+      //display(ini);
+      
+      ini=add(100,ini);
+      
+		display(ini);
+      
+      count(ini);
+      
+      //insert(2,45,ini);
+     // display(ini);
+      
+     
+      
+      getch();
+}     
+       
+ struct node *add(int x,struct node *ini)
+{
+          struct node *temp;
+          //temp=ini;// temp is made to point to the first node of the link
+          if(ini==NULL)
+          {
+                      temp=(struct node *)malloc(sizeof(struct node));  
+                      
+                       temp->data=x;
+                       
+                       //printf("%d\n",temp->data);
+                     //  printf("%u\n",temp);
+                       //printf("%u\n",temp->link);
+                       temp->link=NULL;
+                       //printf("%d\n",temp->link);
+                       //ini=temp; 
+           }
+           else
+           {
+               //temp=ini;
+               while(temp->link!=NULL)
+               {
+               	 temp=temp->link;
+               }
+              
+               
+               naya=(struct node *)malloc(sizeof(struct node));
+               naya->data=x;
+               naya->link=NULL;
+               temp->link=naya;
+               
+           }   
+              // return(ini);
+               
+                      
+                    
+}
+void display(struct node *ini)
+{    
+    // printf("%u\n",ini);
+     while(ini!=NULL)
+     {
+             
+             printf("%d",ini->data);
+             printf("->");
+             ini=ini->link;
+}     }                      
+                                        
+void insert(int loc,int val,struct node *ini) 
+{
+          struct node *temp,*naya;
+          int i;
+          temp=ini;// temp is made to point to the first node of the link
+          printf(" enter the data value \n");
+          for(i=1;i<loc;i++)
+          {
+            printf(" vector\n");              
+            temp=temp->link;
+           
+          }
+           printf(" asadvector\n");
+          if(temp==NULL)
+          {
+                     printf(" enter the data value \n");
+                     }              
+          printf(" asadvector\n");   
+          naya=(struct node *)malloc(sizeof(struct node));
+               naya->data=val;
+               printf("%d\n",naya->data);
+               naya->link=temp->link;
+               temp->link=naya;
+               
+}     
+
+
+void count(struct node *ini)
+{
+     int c=0;
+     struct node *temp;
+     
+     temp=ini;
+     
+     while(temp->link!=NULL)
+     {
+      temp=temp->link;
+     c++;
+      
+     }
+     
+     printf("%d\n",c);
+}   
+              
+          
+          
+          
+      
+                                                    
+                       
+                       
+                                                
+                         
+          
+          
+          
+      
+              
+

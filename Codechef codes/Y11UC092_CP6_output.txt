@@ -1,0 +1,48 @@
+Code by: Garvit Bansal THE LNMIIT.
+
+Enter the number of Test Cases:
+---------------------------------------------------
+TestCase 4: 
+ 
+
+ENTER THE NUMBER:
+The value of Merten's function is: -2
+
+N satisfied Merten's Conjecture
+
+---------------------------------------------------
+TestCase 3: 
+ 
+
+ENTER THE NUMBER:
+The value of Merten's function is: -1
+
+N satisfied Merten's Conjecture
+
+---------------------------------------------------
+TestCase 2: 
+ 
+
+ENTER THE NUMBER:
+The value of Merten's function is: 0
+
+N satisfied Merten's Conjecture
+
+---------------------------------------------------
+TestCase 1: 
+ 
+
+ENTER THE NUMBER:
+The value of Merten's function is: -1
+
+N does not satisfy Merten's Conjecture
+
+---------------------------------------------------
+TestCase 0: 
+ 
+
+ENTER THE NUMBER:
+The value of Merten's function is: -2
+
+N does not satisfy Merten's Conjecture
+
