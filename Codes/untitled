@@ -1,0 +1,39 @@
+
+0 1 0 0
+1 1 1 0
+0 1 0 1
+
+x = 1 1 1 0
+y = 0 3 2 2
+
+p: 5 7 6 1
+c: 3 3 1 1
+
+r: 2 4 5 0
+1 3 4 6
+2 4 1 0
+1 1 1 0
+
+1 2 3 4
+1 4 2 3
+1 3 2 4
+
+start date 1
+end date 7
+curr date now
+
+test case:
+	if time is same but day is different it should work
+
+ if curr day is between start and end day then,
+ 	if curr time between start and end time then,
+ 		do repricing
+ else
+ 	do nothing
+
+srt 1 12 : 06 
+end 7 14 : 50 
+
+cur 1 15 : 50 NO
+cur 7 13 : 40 YS
+cur 8 13 : 12 NO
